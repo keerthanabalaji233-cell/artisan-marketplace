@@ -1,0 +1,60 @@
+/* Component & Responsive Styling for ArtisanAI */
+
+/* Desktop / Mobile Responsive Navigation Toggles */
+@media (max-width: 1023px) {
+  .sidebar-desktop {
+    display: none !important;
+  }
+  .tagline-desktop {
+    display: none !important;
+  }
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bottom-nav-mobile {
+    display: none !important;
+  }
+  .tagline-desktop {
+    display: block !important;
+  }
+}
+
+/* Slide Left Keyframe for AI Assistant Drawer */
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Spinner Animation for AI Progress */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Indian Handicraft Subtle Motif Pattern on Header */
+header {
+  background-image: radial-gradient(#F5EFE6 0.8px, transparent 0.8px);
+  background-size: 16px 16px;
+}
+
+/* Glassmorphism Accents */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
